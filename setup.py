@@ -1,8 +1,8 @@
 from setuptools import setup, find_packages
-from duffingtools import __version__ as current_version
+from data_analysis_tools import __version__ as current_version
 
 # NOTES for updating this file:
-# 1) for version update in the duffingtools.__init__
+# 1) for version update in the data_analysis_tools.__init__
 # 2) update the following comment_on_changes
 comment_on_changes = 'changes version to 0.0a2'
 
