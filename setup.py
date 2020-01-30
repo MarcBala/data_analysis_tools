@@ -4,19 +4,19 @@ from duffingtools import __version__ as current_version
 # NOTES for updating this file:
 # 1) for version update in the duffingtools.__init__
 # 2) update the following comment_on_changes
-comment_on_changes = 'changes version to 0.0a1'
+comment_on_changes = 'changes version to 0.0a2'
 
 setup(
     name='data_analysis_tools',
     version=current_version,
     packages=find_packages(),
     # package_data={'pylabcontrol': ['gui/ui_files/*ui']},
-    url='https://github.com/MarcBala/data_analysis_tools',
+    url='https://github.com/MarcBala/data_analysis_tools.git',
     license='BSD-2-Clause',
     author='Marc Torrent',
-    author_email='test',
-    description='Duffing oscillator theory and fitting',
-    keywords='duffing oscillator, data analysis',
+    author_email='marccuairan@gmail.com',
+    description='asdasdasd',
+    keywords='data analysis',
     long_description=comment_on_changes,
     classifiers=[
         'Programming Language :: Python :: 3',
