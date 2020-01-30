@@ -47,7 +47,7 @@ def load_timetrace_binary(filename, time_step=1 / 625e3, skip_time=0.25, total_t
     N_skip = int(skip_time / time_step)
     N_final = int((total_time + skip_time) / time_step)
 
-    return data[N_skip:N_final, 0:3].T  # the last channel doesn't contain data
+    return data[N_skip:N_final, 0:4].T  # 0:3 3ch /// 0:4 4Ch---
 
 
 #     return info, data[N_skip:N_final, 0:3].T # the last channel doesn't contain data
