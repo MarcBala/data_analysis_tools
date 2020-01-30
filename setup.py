@@ -25,7 +25,7 @@ setup(
         'Environment :: Linux (Ubuntu)',
         ],
     install_requires=[
-        'matplotlib',
+        'matplotlib.pyplot',
         'pandas',
         'numpy',
         'scipy',
