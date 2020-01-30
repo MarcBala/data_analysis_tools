@@ -4,7 +4,7 @@ from duffingtools import __version__ as current_version
 # NOTES for updating this file:
 # 1) for version update in the duffingtools.__init__
 # 2) update the following comment_on_changes
-comment_on_changes = 'test.'
+comment_on_changes = 'test_01'
 
 setup(
     name='test',
