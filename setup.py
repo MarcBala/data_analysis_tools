@@ -15,7 +15,7 @@ setup(
     license='BSD-2-Clause',
     author='Marc Torrent',
     author_email='marccuairan@gmail.com',
-    description='asdasdasd',
+    description='Functions to analyse data from Marc`s experiments',
     keywords='data analysis',
     long_description=comment_on_changes,
     classifiers=[
@@ -24,11 +24,11 @@ setup(
         'Development Status :: 4 - Beta',
         'Environment :: Linux (Ubuntu)',
         ],
-    # install_requires=[
-    #    'pandas',
-    #    'numpy',
-    #    'scipy',
-    #]
+     install_requires=[
+        'pandas',
+        'numpy',
+        'scipy',
+    ]
     # test_suite='nose.collector',
     # tests_require=['nose'],
     # python_requires='>=3.6',
