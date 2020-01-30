@@ -24,11 +24,11 @@ setup(
         'Development Status :: 4 - Beta',
         'Environment :: Linux (Ubuntu)',
         ],
-    install_requires=[
-        'pandas',
-        'numpy',
-        'scipy',
-    ]
+    # install_requires=[
+    #    'pandas',
+    #    'numpy',
+    #    'scipy',
+    #]
     # test_suite='nose.collector',
     # tests_require=['nose'],
     # python_requires='>=3.6',
