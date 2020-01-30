@@ -11,7 +11,7 @@ setup(
     version=current_version,
     packages=find_packages(),
     # package_data={'pylabcontrol': ['gui/ui_files/*ui']},
-    url='https://github.com/JanGieseler/duffingtools',
+    url='https://github.com/MarcBala/data_analysis_tools',
     license='BSD-2-Clause',
     author='Marc Torrent',
     author_email='test',
