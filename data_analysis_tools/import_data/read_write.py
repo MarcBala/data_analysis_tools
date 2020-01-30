@@ -5,35 +5,8 @@
 
 import numpy as np
 import pandas as pd
-from copy import deepcopy
-import matplotlib.pyplot as plt
-# %precision 3 # precission when printing
-import matplotlib
-# from matplotlib.ticker import StrMethodFormatter
-from matplotlib.ticker import LogFormatter, ScalarFormatter, StrMethodFormatter
-
-FONT_SIZE = 12
-MARKER_SIZE = 4
-matplotlib.rc('xtick', labelsize=FONT_SIZE)
-matplotlib.rc('ytick', labelsize=FONT_SIZE)
-matplotlib.rc('axes', titlesize=10)
-matplotlib.rc('axes', labelsize=FONT_SIZE)
-matplotlib.rc('lines', linewidth=2)
-matplotlib.rc('lines', markersize=MARKER_SIZE)
-
-matplotlib.rc('legend', fontsize=FONT_SIZE)
-matplotlib.rc('legend', handlelength=2)
-from mpl_toolkits.axes_grid1.inset_locator import inset_axes, zoomed_inset_axes
-from mpl_toolkits.axes_grid1.inset_locator import mark_inset
-import matplotlib.patches as patches
-
-import matplotlib.gridspec as gridspec
-import yaml
-
-from matplotlib import ticker, cm
 
 pi = np.pi
-
 
 def save_fig(fig, filename, **kwargs):
     """
@@ -74,7 +47,7 @@ def load_timetrace_binary(filename, time_step=1 / 625e3, skip_time=0.25, total_t
     N_skip = int(skip_time / time_step)
     N_final = int((total_time + skip_time) / time_step)
 
-    return data[N_skip:N_final, 0:4].T  # the last channel doesn't contain data
+    return data[N_skip:N_final, 0:3].T  # the last channel doesn't contain data
 
 
 #     return info, data[N_skip:N_final, 0:3].T # the last channel doesn't contain data
