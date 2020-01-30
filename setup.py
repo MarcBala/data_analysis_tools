@@ -25,12 +25,9 @@ setup(
         'Environment :: Linux (Ubuntu)',
         ],
     install_requires=[
-        'matplotlib.pyplot',
         'pandas',
         'numpy',
         'scipy',
-        'lmfit',
-        'uncertainties',
     ]
     # test_suite='nose.collector',
     # tests_require=['nose'],
