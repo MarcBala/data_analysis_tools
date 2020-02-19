@@ -3,6 +3,12 @@
 # author: Marc Torrent
 # modified:
 
+import numpy as np
+import pandas as pd
+
+pi = np.pi
+
+
 def power_spectral_density(x, time_step, freq_range=None, N_pieces=None):
     """
     returns the *single sided* power spectral density of the time trace x which is sampled at intervals time_step
