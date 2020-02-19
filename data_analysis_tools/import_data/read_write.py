@@ -62,3 +62,15 @@ def load_ZI_sweep(filename):
                 32768 / 10)  # convert rms to amplitude in bits
 
     return data
+
+def load_delay_adjustment(filename, separation='\t', header=headers):
+
+    if header=None:
+        headers = ['delay', 'wz', 'wx', 'wy', 'sigma_wz', 'sigma_wx', 'sigma_wy', 'Ez', 'Ex', 'Ey', 'sigma_Ez', 'sigma_Ex',
+                   'sigma_Ey']
+    else:
+        headers=headers
+
+    data = pd.read_csv(filename, sep=separation, names=headers)
+
+    return data
