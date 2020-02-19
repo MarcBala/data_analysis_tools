@@ -67,9 +67,10 @@ def load_delay_adjustment(filename, separation='\t', headers=None):
 
     if headers is None:
         data = pd.read_csv(filename, sep=separation)
+        data = data.stack().str.replace(',','.').unstack()
     else:
         headers = ['delay', 'wz', 'wx', 'wy', 'sigma_wz', 'sigma_wx', 'sigma_wy', 'Ez', 'Ex', 'Ey', 'sigma_Ez', 'sigma_Ex',
                    'sigma_Ey']
         data = pd.read_csv(filename, sep=separation, names=headers)
-
+        data = data.stack().str.replace(',','.').unstack()
     return data
