@@ -65,11 +65,9 @@ def load_ZI_sweep(filename):
 
 def load_delay_adjustment(filename, separation='\t', header=headers):
 
-    if header=None:
+    if header==None:
         headers = ['delay', 'wz', 'wx', 'wy', 'sigma_wz', 'sigma_wx', 'sigma_wy', 'Ez', 'Ex', 'Ey', 'sigma_Ez', 'sigma_Ex',
                    'sigma_Ey']
-    else:
-        headers=headers
 
     data = pd.read_csv(filename, sep=separation, names=headers)
 
