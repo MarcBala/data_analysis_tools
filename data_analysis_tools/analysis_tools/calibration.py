@@ -105,7 +105,7 @@ def fit_psd(fx, px, initial_guess=None, fixed_parameters=[], frequency_range=[],
         plt.legend()
         plt.xlabel(r'$\omega/2\pi$ (kHz)')
         plt.ylabel(r'$S_v$ (bit$^2$/Hz)')
-        plt.title(title,fontsize=16)
+        plt.title(title, fontsize=16)
         plt.tight_layout()
 
         # if save_fig_path:
