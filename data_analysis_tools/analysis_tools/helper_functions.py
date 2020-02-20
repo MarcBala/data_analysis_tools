@@ -1,8 +1,3 @@
-import numpy as np
-import matplotlib.pyplot as plt
-from scipy.signal import find_peaks, savgol_filter, welch
-
-from duffingtools.utils.read_write import save_fig
 pi = np.pi
 
 def power_spectral_density(x, time_step, freq_range=None, N_pieces=None):
