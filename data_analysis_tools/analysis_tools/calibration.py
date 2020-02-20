@@ -63,7 +63,7 @@ def fit_psd(fx, px, initial_guess=None, fixed_parameters=[], frequency_range=[],
 
     if verbose:
         fig = plt.figure()
-        plt.semilogy(f, p, color='midnightblue','o', alpha = 0.5, label = 'data')
+        plt.semilogy(f, p, 'o', color='midnightblue', alpha = 0.5, label = 'data')
         for f_halfmax in [f_halfmax_min, f_halfmax_max]:
             plt.plot([f_halfmax, f_halfmax], [min(p), max(p)], 'k--', alpha = 0.75)
         plt.plot(f, psd(f, **initial_params), 'g', label='initial guess')
