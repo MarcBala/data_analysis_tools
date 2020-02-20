@@ -65,7 +65,7 @@ def fit_psd(fx, px, initial_guess=None, fixed_parameters=[], frequency_range=[],
         fig = plt.figure()
         plt.semilogy(f/1000, p, 'o', color='midnightblue', alpha = 0.5, label = 'data')
         for f_halfmax in [f_halfmax_min, f_halfmax_max]:
-            plt.plot([f_halfmax, f_halfmax], [min(p), max(p)], 'k--', alpha = 0.75)
+            plt.plot([f_halfmax/1000, f_halfmax/1000], [min(p), max(p)], 'k--', alpha = 0.75)
         plt.plot(f/1000, psd(f, **initial_params), 'y', label='initial guess')
 
     # # # ======== actual fit =========================================================================
