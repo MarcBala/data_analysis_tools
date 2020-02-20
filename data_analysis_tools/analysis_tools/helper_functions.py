@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 from uncertainties import ufloat, umath
 import pandas as pd
 import scipy
+import scipy
 
 pi = np.pi
 
