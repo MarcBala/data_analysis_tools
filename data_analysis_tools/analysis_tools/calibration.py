@@ -1,6 +1,6 @@
 import numpy as np
-from duffingtools.theory.brownian_particle import power_spectral_density as psd
-from duffingtools.data_analysis.helper_functions import get_max_psd_coherent_drive
+from data_analysis_tools.theory.brownian_particle import power_spectral_density as psd
+from data_analysis_tools.analysis_tools.helper_functions import get_max_psd_coherent_drive
 import lmfit
 import matplotlib.pyplot as plt
 from uncertainties import ufloat, umath
