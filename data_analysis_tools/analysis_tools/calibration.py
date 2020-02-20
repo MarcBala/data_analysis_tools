@@ -63,9 +63,9 @@ def fit_psd(fx, px, initial_guess=None, fixed_parameters=[], frequency_range=[],
 
     if verbose:
         fig = plt.figure()
-        plt.semilogy(f, p, 'ko', alpha = 0.5, label = 'data')
+        plt.semilogy(f, p, color='midnightblue','o', alpha = 0.5, label = 'data')
         for f_halfmax in [f_halfmax_min, f_halfmax_max]:
-            plt.plot([f_halfmax, f_halfmax], [min(p), max(p)], 'k--', alpha = 0.5)
+            plt.plot([f_halfmax, f_halfmax], [min(p), max(p)], 'k--', alpha = 0.75)
         plt.plot(f, psd(f, **initial_params), 'g', label='initial guess')
 
     # # # ======== actual fit =========================================================================
@@ -99,12 +99,12 @@ def fit_psd(fx, px, initial_guess=None, fixed_parameters=[], frequency_range=[],
         print('\n====== result of psd fit ======')
         print(model_fit.fit_report())  # print the model fit report
 
-        p_fit = psd(f, **model_fit.best_values)
-        plt.plot(f, p_fit, 'r-', label='fit')
+        p_fit = psd(f/1000, **model_fit.best_values)
+        plt.plot(f/1000, p_fit, 'r-', label='fit')
 
         plt.legend()
-        plt.xlabel('frequency (Hz)')
-        plt.ylabel('psd (bit^2/Hz)')
+        plt.xlabel(r'$\omega/2\pi$ (kHz)')
+        plt.ylabel(r'$S_v$ (bit$^2$/Hz)')
 
         # if save_fig_path:
         #     save_fig(fig, save_fig_path)
