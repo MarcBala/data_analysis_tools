@@ -4,7 +4,7 @@ from data_analysis_tools import __version__ as current_version
 # NOTES for updating this file:
 # 1) for version update in the data_analysis_tools.__init__
 # 2) update the following comment_on_changes
-comment_on_changes = 'Added direct_driving parametric_driving, brownian np and heper funcitons'
+comment_on_changes = 'minor changes on calibraiton file'
 
 setup(
     name='data_analysis_tools',

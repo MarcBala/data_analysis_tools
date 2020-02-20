@@ -15,7 +15,7 @@ pi = np.pi
 from duffingtools.utils.read_write import save_fig
 
 def fit_psd(fx, px, initial_guess=None, fixed_parameters=[], frequency_range=[],
-                      verbose=False, method='leastsq',return_fig = False, title):
+                      verbose=False, method='leastsq',return_fig = False, title=''):
     """
     :param fx:
     :param px:
