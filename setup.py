@@ -4,7 +4,7 @@ from data_analysis_tools import __version__ as current_version
 # NOTES for updating this file:
 # 1) for version update in the data_analysis_tools.__init__
 # 2) update the following comment_on_changes
-comment_on_changes = 'Changed plotting setting for the fit_psd function'
+comment_on_changes = 'Added helper_functions and theory folder'
 
 setup(
     name='data_analysis_tools',
